@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="about-me-container">
+    <div class="main-content animate__animated animate__fadeInUp">
+        <div class="education-section" *ngIf="showEducation">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 25px;color:#3cb371;font-weight: bold;">Education</p>
+            </div>
+
+            <p>University Name: VNU University of Science</p>
+            <p> Degree: Bachelor of Computer Science</p>
+            <p>Graduation Year: Expected 2027</p>
+        </div>
+        <div class="projects-section" *ngIf="showProjects">
+            <div id="skills-section" class="skills-section animate__animated animate__fadeInUp">
+                <p style="font-size: 25px;color:#3cb371; font-weight: bold;">Projects</p>
+            </div>
+
+            <div class="project-card" *ngFor="let project of projects">
+                <h4>
+                    {{project.name}}
+                </h4>
+                <p>
+                    {{project.description}}
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>
