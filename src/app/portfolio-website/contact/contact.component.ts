@@ -11,12 +11,14 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {  
+export class ContactComponent { 
+  // Lưu trữ và quản lý biểu mẫu 
   userForm:any;
 
   constructor(public formbuilder:FormBuilder){
   
   }
+  // Phương thức lifecycle - Được gọi sau khi thành phần đã được khởi tạo và các dữ liệu đầu vào đã được đặt.
   ngOnInit(){
     this.userForm = this.formbuilder.group({
       name: [null],
@@ -25,8 +27,8 @@ export class ContactComponent {
     });
   }
   
+  // Phương thức được gọi khi người dùng gửi biểu mẫu.
   onSubmit(){
     console.log("Form Submitted",this.userForm.value);
-    
   }
 }

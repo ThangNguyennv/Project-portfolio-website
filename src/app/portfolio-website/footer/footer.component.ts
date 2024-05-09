@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
 
-  youtubeLink = 'https://www.youtube.com/channel/UCqPbf6fIzhY789Qw6vcE7ig'; // Replace with your actual YouTube channel URL
+  youtubeLink = 'https://www.youtube.com/channel/UCStxEl2RWG-pID971w5amTw'; // Replace with your actual YouTube channel URL
   emailAddress = 'dattran278005@gmail.com';
 constructor(public router:Router){
 
